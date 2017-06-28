@@ -123,9 +123,17 @@ body h3 {
   position: absolute;
   left: -24px;
 }
-.btn-expander .ms-Icon {
+h2 .ms-Icon {
   position: relative;
-  top: 2px;
+  top: -2px;
+  font-size: .6em;
+}
+h2 a,
+h2 a:hover,
+h2 a:focus,
+h2 a:active {
+  color: #333;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   img.package-icon {
@@ -429,6 +437,12 @@ img.package-icon {
   float: right;
   margin-top: 75px;
   margin-bottom: 0;
+}
+.page-delete-package h1 {
+  margin-bottom: 0;
+}
+.page-delete-package #show-delete-package {
+  color: #d9534f;
 }
 .page-profile .profile-title {
   margin-top: 50px;
