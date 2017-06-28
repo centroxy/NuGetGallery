@@ -189,6 +189,10 @@
     </script>
     <script>
         $(function () {
+            if (document.referrer.endsWith("/Delete") && document.referrer.indexOf("@Model.Id") != -1) {
+                $("#VersionSelector").focus();
+            }
+
             $('#VersionSelector').change(function () {
                 window.location.href = this.value;
             });
